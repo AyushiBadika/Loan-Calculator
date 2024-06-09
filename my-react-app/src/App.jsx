@@ -81,6 +81,16 @@ function App() {
             max="18"
           />
         </div>
+        <select
+          name=""
+          id=""
+          onChange={(e) => setTenure(parseInt(e.currentTarget.value))}
+        >
+          <option value="5">5 Years</option>
+          <option value="10">10 Years</option>
+          <option value="15">15 Years</option>
+          <option value="20">20 Years</option>
+        </select>
       </div>
       <div style={{ width: "300px" }}>
         <h3>Monthly Payment: $ {Math.round(monthlyPayment * 100) / 100}</h3>
